@@ -87,6 +87,8 @@ This endpoint allows adding items of a specific type, such as "book" or "drink".
 * The first property, `type`, represents the category of items to be added to the database (e.g., `book`, `drink`).
 * The second property, `items`, is a list of objects, where each object represents an item (e.g., a specific brand for a drink or a title for a book).
 
+***
+
 ### Drink Item Format:
 
 For adding drinks, the objects in the `items` list should follow this format:
