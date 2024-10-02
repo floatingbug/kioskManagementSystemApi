@@ -145,3 +145,63 @@ Content-Type: application/json
 
 * `200 OK`: The request was successful, and the items were added to the database.
 * `400 Bad Request`: The request was invalid due to missing or malformed properties, such as an invalid `type`.
+
+### Book Item Format:
+
+For adding books, the objects in the `items` list should follow this format:
+
+* `author` (required): The author of the book.
+
+  * Example: `"author": "Stephen King"`
+  * Data type: `String`
+
+* `genre`: The genre of the book.
+
+    * Example: `"genre": "Horror"`
+    * Data type: `String`
+
+* `count`: The number of items in stock.
+
+  * Example: `"count": 27`
+  * Data type: `Number`
+
+* `price`: The price of the item.
+
+  * Example: `"price": "20.00euro"`
+  * Data type: `String`
+
+* `note` (optional): Any additional information or note.
+
+  * Example: `"note": "Raise price one day before Christmas."`
+  * Data type: `String`
+
+### Example Request:
+
+```http
+POST /add-items
+Content-Type: application/json
+
+{
+    "type": "book",
+    "items": [
+        {
+            "author": "Stephen King",
+			"genre": "Horror",
+			"count": 4,
+            "price": "20.00euro"
+        },
+        {
+            "author": "Frank Herbert",
+			"genre": "Science Fiction",
+            "count": 2,
+            "price": "5euro",
+			"note": "Increase price on Dune release."
+        }
+    ]
+}
+```
+
+### Possible Status Codes:
+
+* `200 OK`: The request was successful, and the items were added to the database.
+* `400 Bad Request`: The request was invalid due to missing or malformed properties, such as an invalid `type`.
