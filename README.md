@@ -30,7 +30,6 @@
 
 ```
 http
-Code kopieren
 GET /get-items/?type=book&genre=comedy
 ```
 
@@ -40,7 +39,6 @@ GET /get-items/?type=book&genre=comedy
 
 ```
 json
-Code kopieren
 {
     "items": [
         {
@@ -83,7 +81,6 @@ This endpoint allows adding items of a specific type, such as "book" or "drink".
 
 ```
 json
-Code kopieren
 {
     "type": "book",
     "items": []
@@ -126,7 +123,6 @@ For adding drinks, the objects in the `items` list should follow this format:
 
 ```
 http
-Code kopieren
 POST /add-items
 Content-Type: application/json
 
