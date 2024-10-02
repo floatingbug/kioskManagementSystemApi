@@ -2,6 +2,7 @@ const express = require("express");
 const api = express();
 const {addItems} = require("./routes/addItems");
 const {getItems} = require("./routes/getItems");
+const {validateItems} = require("./middleware/validateItems");
 
 function createApi({store}){
 
@@ -12,7 +13,7 @@ function createApi({store}){
 	});
 	api.get("/get-items", getItems({store}));
 
-	api.post("/add-items", addItems({store}));
+	api.post("/add-items", validateItems, addItems({store}));
 
 	return api;
 }
