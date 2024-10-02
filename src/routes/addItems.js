@@ -11,6 +11,15 @@ async function handleRequest(param){
 
 	try{
 		const result = store.addItems({collection, docs});
+		
+		if(!result){
+			res.status(400);
+			res.json({success: false, msg: "Bad Request."});
+			return;
+		}
+
+		res.status(200);
+		res.json({success: true, msg: "Items have been added."});
 	}
 	catch(err){
 		console.log(err);

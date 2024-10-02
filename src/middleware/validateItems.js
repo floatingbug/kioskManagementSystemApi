@@ -10,6 +10,5 @@ function validateItems(req, res, next){
 	}
 
 
-
 	next();
 }
