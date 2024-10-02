@@ -28,8 +28,7 @@
 
 ### Example Request:
 
-```
-http
+```http
 GET /get-items/?type=book&genre=comedy
 ```
 
@@ -37,8 +36,7 @@ GET /get-items/?type=book&genre=comedy
 
 ### Example Response:
 
-```
-json
+```json
 {
     "items": [
         {
@@ -79,8 +77,7 @@ This endpoint allows adding items of a specific type, such as "book" or "drink".
 
 **Format:**
 
-```
-json
+```json
 {
     "type": "book",
     "items": []
@@ -121,8 +118,7 @@ For adding drinks, the objects in the `items` list should follow this format:
 
 ### Example Request:
 
-```
-http
+```http
 POST /add-items
 Content-Type: application/json
 
