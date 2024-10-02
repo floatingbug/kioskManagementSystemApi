@@ -87,7 +87,7 @@ This endpoint allows adding items of a specific type, such as "book" or "drink".
 * The first property, `type`, represents the category of items to be added to the database (e.g., `book`, `drink`).
 * The second property, `items`, is a list of objects, where each object represents an item (e.g., a specific brand for a drink or a title for a book).
 
-***
+---
 
 ### Drink Item Format:
 
@@ -148,7 +148,7 @@ Content-Type: application/json
 * `200 OK`: The request was successful, and the items were added to the database.
 * `400 Bad Request`: The request was invalid due to missing or malformed properties, such as an invalid `type`.
 
-***
+---
 
 ### Book Item Format:
 
