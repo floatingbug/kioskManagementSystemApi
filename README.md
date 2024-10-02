@@ -146,6 +146,8 @@ Content-Type: application/json
 * `200 OK`: The request was successful, and the items were added to the database.
 * `400 Bad Request`: The request was invalid due to missing or malformed properties, such as an invalid `type`.
 
+***
+
 ### Book Item Format:
 
 For adding books, the objects in the `items` list should follow this format:
