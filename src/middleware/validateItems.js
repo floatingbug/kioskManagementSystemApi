@@ -11,6 +11,8 @@ function validateItems(req, res, next){
 
 	const isValidItems = req.body.items.every(item => {
 		if(typeof item !== "object") return false;
+		if(Object.keys(item).length > 10) return false;
+		return true;
 	});
 
 	if(!isValidItems){
