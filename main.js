@@ -1,3 +1,4 @@
+require("dotenv").config();
 const {store} = require("./src/store/store");
 const {createApi} = require("./src/createApi");
 const api = createApi({store});
