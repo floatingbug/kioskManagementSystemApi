@@ -95,28 +95,28 @@ For adding drinks, the objects in the `items` list should follow this format:
 
 * `brand` (required): The brand of the drink.
 
-  * Example: `"brand": "Sprite"`
-  * Data type: `String`
+	  * Example: `"productName": "Sprite"`
+	  * Data type: `String`
 
 * `content`: The size of the drink.
 
-  * Example: `"content": "0.5l"`
-  * Data type: `String`
+	  * Example: `"content": "0.5"`
+	  * Data type: `Number`
 
-* `count`: The number of items in stock.
+* `stock`: The number of items in stock.
 
-  * Example: `"count": 27`
-  * Data type: `Number`
+	  * Example: `"count": 27`
+	  * Data type: `Number`
 
 * `price`: The price of the item.
 
-  * Example: `"price": "1.30euro"`
-  * Data type: `String`
+	  * Example: `"price": "1.30"`
+	  * Data type: `Number`
 
 * `note` (optional): Any additional information or note.
 
-  * Example: `"note": "Raise price one day before Christmas."`
-  * Data type: `String`
+	  * Example: `"note": "Raise price one day before Christmas."`
+	  * Data type: `String`
 
 ##### Example Request:
 
@@ -156,23 +156,23 @@ For adding books, the objects in the `items` list should follow this format:
 
 * `author` (required): The author of the book.
 
-  * Example: `"author": "Stephen King"`
-  * Data type: `String`
+	  * Example: `"author": "Stephen King"`
+	  * Data type: `String`
 
 * `genre`: The genre of the book.
 
     * Example: `"genre": "Horror"`
     * Data type: `String`
 
-* `count`: The number of items in stock.
+* `stock`: The number of items in stock.
 
-  * Example: `"count": 27`
-  * Data type: `Number`
+	  * Example: `"count": 27`
+	  * Data type: `Number`
 
 * `price`: The price of the item.
 
-  * Example: `"price": "20.00euro"`
-  * Data type: `String`
+	  * Example: `"price": "20.00"`
+	  * Data type: `Number`
 
 * `note` (optional): Any additional information or note.
 
