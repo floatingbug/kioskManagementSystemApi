@@ -93,7 +93,7 @@ This endpoint allows adding items of a specific type, such as "book" or "drink".
 
 For adding drinks, the objects in the `items` list should follow this format:
 
-* `brand` (required): The brand of the drink.
+* `productName` (required): The brand of the drink.
 
 	  * Example: `"productName": "Sprite"`
 	  * Data type: `String`
